@@ -279,6 +279,18 @@ s {
   color: var(--ink) !important;
   line-height: 1.55;
 }
+.founder-next {
+  margin-top: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink) !important;
+}
+.founder-next a {
+  color: var(--neon);
+  text-decoration: none;
+  margin-left: 0.15em;
+}
 
 /* ---------- proof grid ---------- */
 .proof-grid {
