@@ -407,7 +407,11 @@ s {
 .price-matrix {
   width: 100%;
   border-collapse: collapse;
-  min-width: 44rem;
+  min-width: 32rem;
+}
+.price-matrix thead th:first-child,
+.price-matrix tbody td:first-child {
+  width: 34%;
 }
 .price-matrix th,
 .price-matrix td {
@@ -481,46 +485,9 @@ s {
   color: var(--neon);
 }
 .row-detail { color: #cfc8cc; font-size: 0.95rem; max-width: 42ch; }
-.price-was {
-  font-family: var(--font-mono);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-.price-was--none { opacity: 0.55; }
-.price-now {
-  display: block;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.45rem;
-  color: var(--ink);
-  line-height: 1.15;
-}
-.price-now small {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--muted);
-}
-.price-now--quote {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--gold);
-}
-.price-then {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-top: 0.3rem;
-}
 
-.price-fine {
-  margin-top: 3rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--muted);
-  max-width: 60ch;
+.price-cta {
+  margin-top: 2.5rem;
 }
 
 /* ---------- mid CTA ---------- */
@@ -672,9 +639,12 @@ s {
     width: 100%;
   }
   .price-matrix th,
-  .price-matrix td {
+  .price-matrix td,
+  .price-matrix thead th:first-child,
+  .price-matrix tbody td:first-child {
     padding: 0;
     border: 0;
+    width: 100%;
   }
   .price-group th {
     padding: 0.85rem 1.15rem;
