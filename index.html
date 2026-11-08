@@ -14,6 +14,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Apollo website tracker: companies (global) and people (U.S.). Same snippet covers both. -->
+  <script>
+    function initApollo() {
+      var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+      o.async = true;
+      o.defer = true;
+      o.onload = function () {
+        window.trackingFunctions.onLoad({ appId: "6aefb91d1f8edd000cbe7941" });
+      };
+      document.head.appendChild(o);
+    }
+    initApollo();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -145,10 +161,114 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 5 — THE SYSTEM (21 DAYS) ============ -->
+    <!-- ============ SECTION 5 — THE DIAGNOSIS ============ -->
+    <section class="section section--diagnosis" aria-labelledby="diagnosis-title">
+      <div class="section-rail">
+        <span class="rail-mark">04 — Diagnosis</span>
+      </div>
+      <div class="section-body">
+        <h2 class="section-title reveal" id="diagnosis-title">
+          Nine blockers are <em class="kw">capping your growth.</em>
+        </h2>
+        <p class="diagnosis-lead reveal">
+          Each one leaks leads on its own. Together they compound. Every blocker
+          below maps to the Scael.ai service that removes it.
+        </p>
+
+        <ul class="blocker-grid reveal-stagger">
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8.25"/>
+              <path d="M12 8v4.25L14.75 14"/>
+            </svg>
+            <h3>Slow site updates</h3>
+            <p>Changes take weeks through an agency queue, so your site is always behind your business.</p>
+            <p class="blocker-fix">Removed by — Systems &amp; management</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.5" y="4.5" width="17" height="15" rx="1.5"/>
+              <path d="M3.5 8.5h17"/>
+              <path d="M8 13.25h4.5M8 16h7"/>
+            </svg>
+            <h3>Outdated website</h3>
+            <p>A dated site erodes trust before a single word is read. Visitors judge in seconds.</p>
+            <p class="blocker-fix">Removed by — Custom website</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.5" y="5.25" width="17" height="13.5" rx="1.5"/>
+              <path d="M10.2 9.15v5.7l5.1-2.85z"/>
+            </svg>
+            <h3>Fatigued creative</h3>
+            <p>The same ads keep running until people scroll straight past them. Nobody is testing the next hook.</p>
+            <p class="blocker-fix">Removed by — Ad creatives</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8.25" r="3"/>
+              <path d="M6.25 18.75c.7-2.7 2.85-4.25 5.75-4.25s5.05 1.55 5.75 4.25"/>
+              <path d="M17.25 6.25l2.1 2.1M19.35 6.25l-2.1 2.1"/>
+            </svg>
+            <h3>No lead capture</h3>
+            <p>Traffic arrives, browses, and leaves — with no mechanism to turn interest into a name.</p>
+            <p class="blocker-fix">Removed by — AI chatbot</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="8.25"/>
+              <path d="M7.2 7.2l9.6 9.6"/>
+            </svg>
+            <h3>Broken funnel</h3>
+            <p>Enquiries fall between the website, inbox and spreadsheet. Nobody owns the handoff.</p>
+            <p class="blocker-fix">Removed by — Systems &amp; management</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.2 4.75h2.1l1.15 2.7-1.45 1.05a9.2 9.2 0 0 0 4.5 4.5l1.05-1.45 2.7 1.15v2.1c0 .7-.55 1.3-1.25 1.35A12.4 12.4 0 0 1 6.85 6c.05-.7.65-1.25 1.35-1.25z"/>
+            </svg>
+            <h3>Slow lead response</h3>
+            <p>A lead answered in an hour is a lead half-lost. Speed to contact decides who wins.</p>
+            <p class="blocker-fix">Removed by — AI chatbot</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7.5h16M4 16.5h16"/>
+              <circle cx="9" cy="7.5" r="2.15"/>
+              <circle cx="15" cy="16.5" r="2.15"/>
+            </svg>
+            <h3>Unqualified ads</h3>
+            <p>Ad spend delivers clicks, but nobody owns the audiences or the budget — so tyre-kickers outnumber ready buyers.</p>
+            <p class="blocker-fix">Removed by — Meta management</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3.75" y="5.25" width="16.5" height="14.5" rx="1.5"/>
+              <path d="M3.75 9.25h16.5"/>
+              <path d="M8 3.5v3.25M16 3.5v3.25"/>
+            </svg>
+            <h3>After-hours blackout</h3>
+            <p>Your best enquiries land at 9pm — and wait until morning while a competitor answers.</p>
+            <p class="blocker-fix">Removed by — AI chatbot</p>
+          </li>
+          <li class="blocker">
+            <svg class="blocker-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.84 12.25 20.56 10.54a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M5.17 11.75 3.46 13.46a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              <path d="M8 2v3M2 8h3M16 19v3M19 16h3"/>
+            </svg>
+            <h3>Disconnected tools</h3>
+            <p>CRM, email and website don’t talk. Data is retyped, lost or never followed up.</p>
+            <p class="blocker-fix">Removed by — Systems &amp; management</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6 — THE SYSTEM (21 DAYS) ============ -->
     <section class="section section--system" aria-labelledby="system-title">
       <div class="section-rail">
-        <span class="rail-mark">04 — The system</span>
+        <span class="rail-mark">05 — The system</span>
       </div>
       <div class="section-body">
         <h2 class="section-title reveal" id="system-title">
@@ -202,10 +322,10 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 6 — SERVICES ============ -->
+    <!-- ============ SECTION 7 — SERVICES ============ -->
     <section class="section section--pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="section-rail">
-        <span class="rail-mark">05 — Services</span>
+        <span class="rail-mark">06 — Services</span>
       </div>
       <div class="section-body">
         <h2 class="section-title reveal" id="pricing-title">
@@ -336,7 +456,7 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 7 — MID-PAGE CTA ============ -->
+    <!-- ============ SECTION 8 — MID-PAGE CTA ============ -->
     <section class="midcta" aria-label="Call to action">
       <div class="midcta-atmosphere" aria-hidden="true">
         <!-- Generated brand artwork (Higgsfield) — neon horizon texture, decorative only -->
@@ -348,10 +468,10 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 8 — FAQ ============ -->
+    <!-- ============ SECTION 9 — FAQ ============ -->
     <section class="section section--faq" aria-labelledby="faq-title">
       <div class="section-rail">
-        <span class="rail-mark">06 — FAQ</span>
+        <span class="rail-mark">07 — FAQ</span>
       </div>
       <div class="section-body">
         <h2 class="section-title reveal" id="faq-title">Fair questions. <em class="kw">Straight answers.</em></h2>
@@ -397,7 +517,7 @@
       </div>
     </section>
 
-    <!-- ============ SECTION 9 — CLOSING CTA ============ -->
+    <!-- ============ SECTION 10 — CLOSING CTA ============ -->
     <section class="closer" id="book" aria-labelledby="closer-title">
       <div class="closer-inner reveal">
         <p class="eyebrow eyebrow--center">One call. One system. No ego.</p>
