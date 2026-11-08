@@ -522,7 +522,7 @@
       <div class="closer-inner reveal">
         <p class="eyebrow eyebrow--center">One call. One system. No ego.</p>
         <h2 class="closer-title" id="closer-title">Book your discovery <em class="kw">today.</em></h2>
-        <a class="cta cta--primary cta--big" href="#book" data-booking-link data-magnetic>Book your discovery call</a>
+        <div id="apollo-forms" class="apollo-form"></div>
         <p class="cta-note">30 minutes, no obligation — you leave with a clear read on your funnel either way.</p>
       </div>
     </section>
@@ -538,6 +538,27 @@
   </footer>
 
   <div class="grain" aria-hidden="true"></div>
+
+  <!-- Apollo inbound form. Separate app id from the website tracker above. -->
+  <script>
+    (function () {
+      var nocache = Math.random().toString(36).substring(7);
+      var script = document.createElement("script");
+      script.src = "https://assets.apollo.io/js/apollo-inbound.js?nocache=" + nocache;
+      script.async = true;
+      script.onload = function () {
+        try {
+          window.ApolloInbound.forms.init({ appId: "6aefc4e4ba48640020404e11" });
+        } catch (err) {
+          console.error("[Apollo] Error initializing form builder:", err);
+        }
+      };
+      script.onerror = function () {
+        console.error("[Apollo] Failed to load form builder script");
+      };
+      document.head.appendChild(script);
+    })();
+  </script>
 
   <script src="script.js" defer></script>
 </body>

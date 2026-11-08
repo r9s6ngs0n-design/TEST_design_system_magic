@@ -5,7 +5,7 @@
 /* ------------------------------------------------------------
    BOOKING LINK — swap this one constant for your Calendly /
    booking URL and every CTA on the page updates.
-   Leave as "#book" to scroll to the closing CTA instead.
+   Leave as "#book" to scroll to the Apollo form in the closing section.
    ------------------------------------------------------------ */
 const BOOKING_URL = "#book";
 
